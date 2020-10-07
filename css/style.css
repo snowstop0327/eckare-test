@@ -1,0 +1,602 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Noto Sans T Chinese","Noto Sans TC","Microsoft JhengHei",helvetica,sans-serif;
+  vertical-align: baseline;
+  color: #9B9B9B; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+a {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  color: #1875d1;
+  text-decoration: none; }
+
+::-moz-selection {
+  background: #4A4A4A;
+  color: #fff; }
+
+::selection {
+  background: #4A4A4A;
+  color: #fff; }
+
+img {
+  max-width: 100%;
+  width: 100%; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/BxfrwvhZBmVnDwajjdTQeH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/rOHfGaogav5XpJHYhB_YZ3-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/zwDIfh8KEInP4WYoM7h0b3-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF; }
+
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/BgwOR-U84B6EluzUITbpkH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+  unicode-range: U+0370-03FF; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/Zcmru5bcP_p_TwCNg-F3DH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v9/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: "untitled-font-2";
+  src: url("../fonts/untitled-font-2.eot");
+  src: url("../fonts/untitled-font-2.eot?#iefix") format("embedded-opentype"), url("../fonts/untitled-font-2.woff") format("woff"), url("../fonts/untitled-font-2.ttf") format("truetype"), url("../fonts/untitled-font-2.svg#untitled-font-2") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "untitled-font-2" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-desktop:before {
+  content: "\63"; }
+
+.icon-facebook-square:before {
+  content: "\61"; }
+
+.icon-graph:before {
+  content: "\62"; }
+
+.icon-megaphone:before {
+  content: "\64"; }
+
+.icon-mobile:before {
+  content: "\65"; }
+
+.icon-android-add:before {
+  content: "\68"; }
+
+.icon-android-remove:before {
+  content: "\69"; }
+
+.icon-three-bars:before {
+  content: "\66"; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*For IE 6&7 only*/ }
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  height: 56px;
+  background-color: #fff;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+  .header.sticky {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    top: 0;
+    -webkit-box-shadow: 0 0px 5px rgba(130, 108, 108, 0.3);
+    box-shadow: 0 0px 5px rgba(130, 108, 108, 0.3); }
+  .header .EZcareers-logo {
+    display: inline-block;
+    float: left;
+    min-width: 265px; }
+    .header .EZcareers-logo a.EZlogo {
+      display: inline-block;
+      width: 134px;
+      height: 55px;
+      background: url("../img/logo.png") no-repeat center; }
+    .header .EZcareers-logo h1 {
+      float: right;
+      color: #FFF;
+      font-size: 1.5em;
+      font-weight: 400;
+      padding-left: 15px;
+      border-left: 1px solid #FFF;
+      margin: 23px 0 0 18px; }
+  .header nav {
+    position: relative; }
+    .header nav > ul {
+      float: right;
+      margin-top: 25px; }
+      .header nav > ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 2em; }
+        .header nav > ul li:before {
+          margin-top: -6px;
+          font-size: 18px;
+          display: inline-block;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          color: #E2E2E2; }
+        .header nav > ul li a {
+          padding-left: 23px;
+          color: #E2E2E2;
+          font-size: 1.125em; }
+          .header nav > ul li a i {
+            color: #E2E2E2;
+            font-size: 0.8em;
+            padding-right: 2px; }
+        .header nav > ul li a:hover {
+          color: #FFF; }
+          .header nav > ul li a:hover i {
+            color: #FFF; }
+    .header nav .mobile-nav-btn {
+      display: none;
+      font-size: 2.5em;
+      float: right;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      margin: 10px;
+      color: #ccc; }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.wrapper {
+  position: relative; }
+  .wrapper .head-banner {
+    width: 100%;
+    height: 600px;
+    display: table;
+    background: #4A4A4A url("../img/EZcareers-banner.jpg") no-repeat center top;
+    background-size: cover; }
+    .wrapper .head-banner .top-title {
+      display: table-cell;
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+      width: 1000px;
+      z-index: 2;
+      text-align: center;
+      color: #ff6706;
+      font-weight: 300;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5em; }
+      .wrapper .head-banner .top-title .text {
+        fill: url(#p-fire);
+        stroke-width: 8;
+        stroke-opacity: .5;
+        font-size: 56px;
+        font-weight: 700;
+        font-family: "Noto Sans T Chinese","Noto Sans TC","Microsoft JhengHei",helvetica,sans-serif;
+        text-shadow: 2px 2px 10px; }
+      .wrapper .head-banner .top-title svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 100%; }
+        .wrapper .head-banner .top-title svg small {
+          margin-top: 200px;
+          display: block;
+          color: #ff6706;
+          font-family: 'Ubuntu', sans-serif; }
+        .wrapper .head-banner .top-title svg span {
+          color: #ccc;
+          font-size: 1.125em;
+          display: block;
+          margin-top: 5px;
+          font-family: 'Ubuntu', sans-serif; }
+      .wrapper .head-banner .top-title h2 {
+        fill: url(#p-fire);
+        font-size: 4.5em;
+        text-shadow: 2px 3px 2px #000;
+        padding: 20px 0 10px 50px;
+        color: #ff6706; }
+      .wrapper .head-banner .top-title small {
+        display: block;
+        color: #ff6706; }
+      .wrapper .head-banner .top-title span {
+        color: #ccc;
+        font-size: 1.5em;
+        display: block;
+        margin-top: 5px;
+        font-family: 'Ubuntu', sans-serif; }
+      .wrapper .head-banner .top-title #nn-title.down {
+        margin-top: 150px; }
+  .wrapper main {
+    margin-bottom: 50px; }
+    .wrapper main #section-01, .wrapper main #section-02 {
+      padding: 3em 0 1em; }
+      .wrapper main #section-01 h2, .wrapper main #section-02 h2 {
+        font-size: 1.5em;
+        color: #4A4A4A;
+        margin-bottom: 30px; }
+    .wrapper main #section-01 ul {
+      line-height: 30px;
+      font-size: 1.1em;
+      list-style: inherit; }
+      .wrapper main #section-01 ul li {
+        margin-left: 20px; }
+    .wrapper main #section-02 ul.jobs-list {
+      margin: 10px 0; }
+      .wrapper main #section-02 ul.jobs-list > li {
+        position: relative;
+        margin-bottom: 1em;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        padding: 20px 0 20px 25px;
+        letter-spacing: 1px;
+        cursor: pointer; }
+        .wrapper main #section-02 ul.jobs-list > li i {
+          font-size: 2.2em;
+          cursor: pointer;
+          float: right;
+          margin-right: 5px; }
+          .wrapper main #section-02 ul.jobs-list > li i:before {
+            -webkit-transition: all ease-in-out 0.3s;
+            -moz-transition: all ease-in-out 0.3s;
+            -o-transition: all ease-in-out 0.3s;
+            transition: all ease-in-out 0.3s; }
+        .wrapper main #section-02 ul.jobs-list > li.gray-bg {
+          background: #F4F4F4; }
+          .wrapper main #section-02 ul.jobs-list > li.gray-bg h3 {
+            color: #4A4A4A;
+            font-weight: 500; }
+        .wrapper main #section-02 ul.jobs-list > li .job-title {
+          float: left;
+          display: inline-block; }
+          .wrapper main #section-02 ul.jobs-list > li .job-title > h3 {
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #777;
+            margin-bottom: 10px; }
+        .wrapper main #section-02 ul.jobs-list > li article {
+          display: none;
+          margin: 20px 0 10px;
+          line-height: 25px;
+          font-size: 1em;
+          color: #777;
+          font-weight: 300;
+          padding-right: 20px;
+          float: left;
+          width: 90%; }
+          .wrapper main #section-02 ul.jobs-list > li article ol {
+            list-style: initial;
+            list-style-type: decimal;
+            list-style-position: inside;
+            margin: 10px 0; }
+            .wrapper main #section-02 ul.jobs-list > li article ol li {
+              color: #777; }
+          .wrapper main #section-02 ul.jobs-list > li article strong {
+            color: #777; }
+  .wrapper a.join-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px solid #5a5a5a;
+    padding: 15px 30px;
+    color: #5a5a5a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; }
+  .wrapper a.join-btn:hover {
+    background: #5a5a5a;
+    color: #fff; }
+  .wrapper footer {
+    background: #F4F4F4;
+    width: 100%;
+    padding: 30px 0 40px;
+    text-align: center; }
+    .wrapper footer .share-btns {
+      margin: 0 auto 20px; }
+      .wrapper footer .share-btns a {
+        width: 60px;
+        padding: 0px 10px;
+        background: #fff;
+        border: 1px solid #5a5a5a;
+        font-size: 1em;
+        border-radius: 2px;
+        line-height: 25px;
+        margin-right: 10px;
+        display: inline-block;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s; }
+        .wrapper footer .share-btns a.fb-btn:before {
+          padding-top: 5px;
+          padding-right: 3px;
+          float: left;
+          color: #1875d1; }
+        .wrapper footer .share-btns a .line-btn {
+          float: left;
+          width: 17px;
+          margin: 4px 4px 4px 0;
+          fill: #00C200; }
+        .wrapper footer .share-btns a:hover {
+          background: #5a5a5a; }
+          .wrapper footer .share-btns a:hover span {
+            color: #fff; }
+          .wrapper footer .share-btns a:hover svg.u7, .wrapper footer .share-btns a:hover svg.line-btn {
+            fill: #fff; }
+          .wrapper footer .share-btns a:hover:before {
+            color: #fff; }
+        .wrapper footer .share-btns a span {
+          color: #666;
+          font-size: 14px;
+          line-height: 20px; }
+        .wrapper footer .share-btns a svg.u7 {
+          float: left;
+          margin-top: 3px;
+          padding-right: 5px;
+          fill: #db4437;
+          width: 18px;
+          height: 18px; }
+    .wrapper footer ul.foot-nav {
+      margin: 0 1em 1em; }
+      .wrapper footer ul.foot-nav li {
+        position: relative;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 12px;
+        color: #4A4A4A;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s; }
+        .wrapper footer ul.foot-nav li:before {
+          margin-top: -6px;
+          font-size: 18px;
+          display: inline-block;
+          position: absolute;
+          top: 6px;
+          left: 0; }
+        .wrapper footer ul.foot-nav li:hover, .wrapper footer ul.foot-nav li:hover a {
+          color: #ff6706; }
+        .wrapper footer ul.foot-nav li a {
+          color: #4A4A4A;
+          font-size: 0.875em;
+          padding-left: 20px;
+          margin-top: -2px; }
+    .wrapper footer small.copyright {
+      font-size: 0.875em;
+      font-family: 'Ubuntu', sans-serif;
+      color: #777; }
+
+#goTop {
+  color: #4A4A4A;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+  #goTop:hover {
+    color: #FFF; }
+
+.Kare-content {
+  padding-top: 56px;
+  padding-bottom: 50px;
+  width: 100%; }
+  .Kare-content img {
+    display: block; }
+
+.tabbar {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+@media screen and (max-width: 1000px) {
+  .content {
+    padding: 0 1em; }
+  .EZcareers-header nav > ul {
+    width: 100%;
+    display: none; }
+    .EZcareers-header nav > ul.active {
+      height: auto; }
+    .EZcareers-header nav > ul li {
+      float: none;
+      text-align: center;
+      background: #4A4A4A;
+      margin: 0 -16px; }
+      .EZcareers-header nav > ul li :hover {
+        background: #999; }
+      .EZcareers-header nav > ul li a {
+        display: block;
+        padding: 10px; }
+  .EZcareers-header nav .mobile-nav-btn {
+    display: inline-block; }
+  .wrapper .head-banner {
+    height: 400px; }
+    .wrapper .head-banner .top-title {
+      width: 100%; }
+      .wrapper .head-banner .top-title .text {
+        font-size: 3.5em; }
+      .wrapper .head-banner .top-title #nn-title {
+        font-size: 80%; }
+        .wrapper .head-banner .top-title #nn-title.down {
+          margin-top: 130px; }
+        .wrapper .head-banner .top-title #nn-title h2 {
+          font-size: 6em; } }
+
+@media screen and (max-width: 480px) {
+  .EZcareers-header.sticky {
+    padding: 0; }
+  .EZcareers-header .EZcareers-logo {
+    margin: 10px 0;
+    min-width: 150px; }
+    .EZcareers-header .EZcareers-logo a.EZlogo {
+      width: 90px;
+      height: 35px;
+      background-size: contain; }
+    .EZcareers-header .EZcareers-logo h1 {
+      font-size: 1.2em;
+      margin: 10px 0 0 10px;
+      padding-left: 10px; }
+  .EZcareers-header nav > ul {
+    margin-top: 5px; }
+  .wrapper .head-banner {
+    height: 350px;
+    background: #4A4A4A url("../img/EZcareers-banner-M.jpg") no-repeat center top;
+    background-size: cover; }
+    .wrapper .head-banner .top-title .text {
+      font-size: 3.5em; }
+    .wrapper .head-banner .top-title #nn-title h2 {
+      font-size: 2.9em;
+      padding: 0 0 5px 20px; }
+    .wrapper .head-banner .top-title #nn-title.down {
+      margin-top: 85px; }
+  .wrapper main #section-01 h2, .wrapper main #section-02 h2 {
+    margin-bottom: 15px; }
+  .wrapper main #section-02 {
+    margin: 0; }
+    .wrapper main #section-02 h2 {
+      line-height: 35px; }
+    .wrapper main #section-02 ul.jobs-list > li {
+      padding: 10px;
+      overflow: hidden; }
+      .wrapper main #section-02 ul.jobs-list > li i {
+        font-size: 1.5em;
+        margin-right: 0; }
+      .wrapper main #section-02 ul.jobs-list > li .job-title {
+        width: 85%; }
+        .wrapper main #section-02 ul.jobs-list > li .job-title > h3 {
+          font-size: 1.2em;
+          line-height: 1.5em;
+          font-weight: bold; }
+      .wrapper main #section-02 ul.jobs-list > li p {
+        padding: 0; } }
+
+@media screen and (max-width: 360px) {
+  .wrapper .head-banner {
+    height: 280px; }
+    .wrapper .head-banner .top-title #nn-title {
+      margin-top: 80px; }
+      .wrapper .head-banner .top-title #nn-title h2 {
+        font-size: 2.5em;
+        padding: 0; }
+  .wrapper main #section-02 {
+    padding-top: 1em; }
+    .wrapper main #section-02 ul.jobs-list > li article {
+      font-size: 1.2em;
+      margin-bottom: 20px; } }
+
+@media screen and (min-width: 1001px) {
+  .EZcareers-header nav > ul {
+    display: block !important; } }

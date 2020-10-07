@@ -1,0 +1,333 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*For IE 6&7 only*/ }
+
+.EZcareers-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  padding: 26px 0 10px 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+  .EZcareers-header.sticky {
+    position: fixed;
+    top: 0;
+    background: #4A4A4A;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    padding: 10px 0 10px 0; }
+  .EZcareers-header .EZcareers-logo {
+    display: inline-block;
+    float: left;
+    min-width: 265px; }
+    .EZcareers-header .EZcareers-logo a.EZlogo {
+      display: inline-block;
+      width: 134px;
+      height: 55px;
+      background: url("../img/logo.png") no-repeat center; }
+    .EZcareers-header .EZcareers-logo h1 {
+      float: right;
+      color: #FFF;
+      font-size: 1.5em;
+      font-weight: 400;
+      padding-left: 15px;
+      border-left: 1px solid #FFF;
+      margin: 23px 0 0 18px; }
+  .EZcareers-header nav {
+    position: relative; }
+    .EZcareers-header nav > ul {
+      float: right;
+      margin-top: 25px; }
+      .EZcareers-header nav > ul li {
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 2em; }
+        .EZcareers-header nav > ul li:before {
+          margin-top: -6px;
+          font-size: 18px;
+          display: inline-block;
+          position: absolute;
+          top: 6px;
+          left: 0;
+          color: #E2E2E2; }
+        .EZcareers-header nav > ul li a {
+          padding-left: 23px;
+          color: #E2E2E2;
+          font-size: 1.125em; }
+          .EZcareers-header nav > ul li a i {
+            color: #E2E2E2;
+            font-size: 0.8em;
+            padding-right: 2px; }
+        .EZcareers-header nav > ul li a:hover {
+          color: #FFF; }
+          .EZcareers-header nav > ul li a:hover i {
+            color: #FFF; }
+    .EZcareers-header nav .mobile-nav-btn {
+      display: none;
+      font-size: 2.5em;
+      float: right;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      margin: 10px;
+      color: #ccc; }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.wrapper {
+  position: relative; }
+  .wrapper .head-banner {
+    width: 100%;
+    height: 600px;
+    display: table;
+    background: #4A4A4A url("../img/EZcareers-banner.jpg") no-repeat center top;
+    background-size: cover; }
+    .wrapper .head-banner .top-title {
+      display: table-cell;
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+      width: 1000px;
+      z-index: 2;
+      text-align: center;
+      color: #ff6706;
+      font-weight: 300;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5em; }
+      .wrapper .head-banner .top-title .text {
+        fill: url(#p-fire);
+        stroke-width: 8;
+        stroke-opacity: .5;
+        font-size: 56px;
+        font-weight: 700;
+        font-family: "Noto Sans T Chinese","Noto Sans TC","Microsoft JhengHei",helvetica,sans-serif;
+        text-shadow: 2px 2px 10px; }
+      .wrapper .head-banner .top-title svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 100%; }
+        .wrapper .head-banner .top-title svg small {
+          margin-top: 200px;
+          display: block;
+          color: #ff6706;
+          font-family: 'Ubuntu', sans-serif; }
+        .wrapper .head-banner .top-title svg span {
+          color: #ccc;
+          font-size: 1.125em;
+          display: block;
+          margin-top: 5px;
+          font-family: 'Ubuntu', sans-serif; }
+      .wrapper .head-banner .top-title h2 {
+        fill: url(#p-fire);
+        font-size: 4.5em;
+        text-shadow: 2px 3px 2px #000;
+        padding: 20px 0 10px 50px;
+        color: #ff6706; }
+      .wrapper .head-banner .top-title small {
+        display: block;
+        color: #ff6706; }
+      .wrapper .head-banner .top-title span {
+        color: #ccc;
+        font-size: 1.5em;
+        display: block;
+        margin-top: 5px;
+        font-family: 'Ubuntu', sans-serif; }
+      .wrapper .head-banner .top-title #nn-title.down {
+        margin-top: 150px; }
+  .wrapper main {
+    margin-bottom: 50px; }
+    .wrapper main #section-01, .wrapper main #section-02 {
+      padding: 3em 0 1em; }
+      .wrapper main #section-01 h2, .wrapper main #section-02 h2 {
+        font-size: 1.5em;
+        color: #4A4A4A;
+        margin-bottom: 30px; }
+    .wrapper main #section-01 ul {
+      line-height: 30px;
+      font-size: 1.1em;
+      list-style: inherit; }
+      .wrapper main #section-01 ul li {
+        margin-left: 20px; }
+    .wrapper main #section-02 ul.jobs-list {
+      margin: 10px 0; }
+      .wrapper main #section-02 ul.jobs-list > li {
+        position: relative;
+        margin-bottom: 1em;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        padding: 20px 0 20px 25px;
+        letter-spacing: 1px;
+        cursor: pointer; }
+        .wrapper main #section-02 ul.jobs-list > li i {
+          font-size: 2.2em;
+          cursor: pointer;
+          float: right;
+          margin-right: 5px; }
+          .wrapper main #section-02 ul.jobs-list > li i:before {
+            -webkit-transition: all ease-in-out 0.3s;
+            -moz-transition: all ease-in-out 0.3s;
+            -o-transition: all ease-in-out 0.3s;
+            transition: all ease-in-out 0.3s; }
+        .wrapper main #section-02 ul.jobs-list > li.gray-bg {
+          background: #F4F4F4; }
+          .wrapper main #section-02 ul.jobs-list > li.gray-bg h3 {
+            color: #4A4A4A;
+            font-weight: 500; }
+        .wrapper main #section-02 ul.jobs-list > li .job-title {
+          float: left;
+          display: inline-block; }
+          .wrapper main #section-02 ul.jobs-list > li .job-title > h3 {
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #777;
+            margin-bottom: 10px; }
+        .wrapper main #section-02 ul.jobs-list > li article {
+          display: none;
+          margin: 20px 0 10px;
+          line-height: 25px;
+          font-size: 1em;
+          color: #777;
+          font-weight: 300;
+          padding-right: 20px;
+          float: left;
+          width: 90%; }
+          .wrapper main #section-02 ul.jobs-list > li article ol {
+            list-style: initial;
+            list-style-type: decimal;
+            list-style-position: inside;
+            margin: 10px 0; }
+            .wrapper main #section-02 ul.jobs-list > li article ol li {
+              color: #777; }
+          .wrapper main #section-02 ul.jobs-list > li article strong {
+            color: #777; }
+  .wrapper a.join-btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px solid #5a5a5a;
+    padding: 15px 30px;
+    color: #5a5a5a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; }
+  .wrapper a.join-btn:hover {
+    background: #5a5a5a;
+    color: #fff; }
+  .wrapper footer {
+    background: #F4F4F4;
+    width: 100%;
+    padding: 30px 0 40px;
+    text-align: center; }
+    .wrapper footer .share-btns {
+      margin: 0 auto 20px; }
+      .wrapper footer .share-btns a {
+        width: 60px;
+        padding: 0px 10px;
+        background: #fff;
+        border: 1px solid #5a5a5a;
+        font-size: 1em;
+        border-radius: 2px;
+        line-height: 25px;
+        margin-right: 10px;
+        display: inline-block;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s; }
+        .wrapper footer .share-btns a.fb-btn:before {
+          padding-top: 5px;
+          padding-right: 3px;
+          float: left;
+          color: #1875d1; }
+        .wrapper footer .share-btns a .line-btn {
+          float: left;
+          width: 17px;
+          margin: 4px 4px 4px 0;
+          fill: #00C200; }
+        .wrapper footer .share-btns a:hover {
+          background: #5a5a5a; }
+          .wrapper footer .share-btns a:hover span {
+            color: #fff; }
+          .wrapper footer .share-btns a:hover svg.u7, .wrapper footer .share-btns a:hover svg.line-btn {
+            fill: #fff; }
+          .wrapper footer .share-btns a:hover:before {
+            color: #fff; }
+        .wrapper footer .share-btns a span {
+          color: #666;
+          font-size: 14px;
+          line-height: 20px; }
+        .wrapper footer .share-btns a svg.u7 {
+          float: left;
+          margin-top: 3px;
+          padding-right: 5px;
+          fill: #db4437;
+          width: 18px;
+          height: 18px; }
+    .wrapper footer ul.foot-nav {
+      margin: 0 1em 1em; }
+      .wrapper footer ul.foot-nav li {
+        position: relative;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 12px;
+        color: #4A4A4A;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s; }
+        .wrapper footer ul.foot-nav li:before {
+          margin-top: -6px;
+          font-size: 18px;
+          display: inline-block;
+          position: absolute;
+          top: 6px;
+          left: 0; }
+        .wrapper footer ul.foot-nav li:hover, .wrapper footer ul.foot-nav li:hover a {
+          color: #ff6706; }
+        .wrapper footer ul.foot-nav li a {
+          color: #4A4A4A;
+          font-size: 0.875em;
+          padding-left: 20px;
+          margin-top: -2px; }
+    .wrapper footer small.copyright {
+      font-size: 0.875em;
+      font-family: 'Ubuntu', sans-serif;
+      color: #777; }
+
+#goTop {
+  color: #4A4A4A;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+  #goTop:hover {
+    background: #4A4A4A;
+    color: #FFF; }
